@@ -9,6 +9,11 @@ public class Produto {
     
     private String codigo;
 
+    public Produto() { 
+    	this.nome = "teste";
+    	this.codigo = "666";
+    }
+    
     public Produto(String nome, String codigo) {
         this.nome = nome;
         this.codigo = codigo;
@@ -33,7 +38,7 @@ public class Produto {
     public static List<Produto> mockaProdutos(){
         List<Produto> produtos = new ArrayList<>();
         
-        for(int i = 0; i < 5; i++){
+        for(int i = 0; i < 50; i++){
             String nome = "produto" + i;
             String codigo = ""+i;
             Produto p = new Produto(nome, codigo);
